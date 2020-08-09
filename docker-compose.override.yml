@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+   ports:
+     - 80:8080
+
+# Run application: `docker-compose up -d`.
+# App now accessible at curl http://localhost/webapp/resources/persons
+# Shutdown using `docker-compose down`

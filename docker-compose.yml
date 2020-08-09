@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: jboss/wildfly
+    volumes:
+      - ~/deployments:/opt/jboss/wildfly/standalone/deployments
+    ports:
+      - 8080:8080
+
+
+# `deployments` directory is automatically created
+# docker-compose up -d
+# docker-compose logs -f
+# cp docker-for-java-master/chapter2/webapp.war ~/deployments
+# curl http://localhost:8080/webapp/resources/persons
+# docker-compose down
